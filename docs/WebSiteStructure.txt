@@ -1,0 +1,104 @@
+src
+├─ assets
+│  └─ images
+│
+├─ components
+│  ├─ Header
+│  │  ├─ Header.jsx
+│  │  └─ Header.css
+│  │
+│  ├─ Footer
+│  │  ├─ Footer.jsx
+│  │  └─ Footer.css
+│  │
+│  ├─ Hero
+│  │  ├─ Hero.jsx
+│  │  └─ Hero.css
+│  │
+│  ├─ SectionTitle
+│  │  ├─ SectionTitle.jsx
+│  │  └─ SectionTitle.css
+│  │
+│  ├─ ServiceCard
+│  │  ├─ ServiceCard.jsx
+│  │  └─ ServiceCard.css
+│  │
+│  ├─ OfferCard
+│  │  ├─ OfferCard.jsx
+│  │  └─ OfferCard.css
+│  │
+│  └─ CtaBanner
+│     ├─ CtaBanner.jsx
+│     └─ CtaBanner.css
+│
+├─ data
+│  ├─ services.js
+│  └─ offers.js
+│
+├─ pages
+│  ├─ Home
+│  │  ├─ Home.jsx
+│  │  └─ Home.css
+│  │
+│  ├─ Services
+│  │  ├─ Services.jsx
+│  │  └─ Services.css
+│  │
+│  ├─ Offers
+│  │  ├─ Offers.jsx
+│  │  └─ Offers.css
+│  │
+│  ├─ Prevention
+│  │  ├─ Prevention.jsx
+│  │  └─ Prevention.css
+│  │
+│  ├─ About
+│  │  ├─ About.jsx
+│  │  └─ About.css
+│  │
+│  ├─ Contact
+│  │  ├─ Contact.jsx
+│  │  └─ Contact.css
+│  │
+│  └─ NotFound
+│     ├─ NotFound.jsx
+│     └─ NotFound.css
+│
+├─ router
+│  └─ AppRouter.jsx
+│
+├─ styles
+│  ├─ variables.css
+│  ├─ global.css
+│  └─ index.css
+│
+├─ App.jsx
+└─ main.jsx
+
+Structure du site Protech Assistance
+
+Pages :
+- Accueil : présentation générale, marketing, services, offres, appel à l’action
+- Prestations : détail des services proposés
+- Offres : détail des formules
+- Prévention : conseils et pédagogie anti-arnaques
+- À propos : mission, valeurs, approche humaine
+- Contact : formulaire et informations de contact
+
+Routes :
+/               -> Accueil
+/prestations    -> Prestations
+/offres         -> Offres
+/prevention     -> Prévention
+/a-propos       -> À propos
+/contact        -> Contact
+*               -> Page introuvable
+
+Structure CSS :
+- variables.css : couleurs, tailles, espacements, variables globales
+- global.css : reset, styles généraux, styles HTML communs
+- un fichier CSS dédié par page
+- un fichier CSS dédié par composant
+
+Navigation :
+- uniquement avec Link de react-router-dom pour les liens internes

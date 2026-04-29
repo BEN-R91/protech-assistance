@@ -1,0 +1,99 @@
+:root {
+  /* ================================
+     COULEURS PRINCIPALES
+     ================================ */
+
+  --color-primary: #12324a;
+  --color-primary-dark: #0b2235;
+  --color-secondary: #2f80ed;
+  --color-accent: #2fae7b;
+
+  /* ================================
+     COULEURS D'ÉTAT
+     ================================ */
+
+  --color-success: #2fae7b;
+  --color-warning: #f59e42;
+  --color-danger: #d64545;
+  --color-info: #2f80ed;
+
+  /* ================================
+     FONDS
+     ================================ */
+
+  --color-background: #f7fafc;
+  --color-surface: #ffffff;
+  --color-soft: #eef6f8;
+  --color-soft-blue: #eaf3fb;
+  --color-soft-green: #eaf8f2;
+  --color-soft-warning: #fff3e3;
+  --color-soft-danger: #fdecec;
+
+  /* ================================
+     TEXTES
+     ================================ */
+
+  --color-text: #1f2933;
+  --color-muted: #64748b;
+  --color-light: #ffffff;
+
+  /* ================================
+     BORDURES & OMBRES
+     ================================ */
+
+  --color-border: #dde7ee;
+  --color-border-soft: #e8eef3;
+
+  --shadow-soft: 0 10px 30px rgba(18, 50, 74, 0.08);
+  --shadow-card: 0 6px 20px rgba(18, 50, 74, 0.06);
+
+  /* ================================
+     TYPOGRAPHIES
+     ================================ */
+
+  --font-title: "Manrope", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* ================================
+     TAILLES DE TEXTE
+     ================================ */
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: clamp(2.25rem, 5vw, 4rem);
+
+  /* ================================
+     ARRONDIS
+     ================================ */
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+  --radius-pill: 999px;
+
+  /* ================================
+     LAYOUT
+     ================================ */
+
+  --container-width: 1180px;
+  --section-padding: clamp(3rem, 6vw, 6rem);
+
+  /* ================================
+     SYSTÈME PROTECH
+     ================================ */
+
+  --status-normal: #2fae7b;
+  --status-normal-bg: #eaf8f2;
+
+  --status-warning: #f59e42;
+  --status-warning-bg: #fff3e3;
+
+  --status-danger: #d64545;
+  --status-danger-bg: #fdecec;
+}

@@ -1,0 +1,13 @@
+.footer {
+  padding: 2rem 1rem;
+
+  background: var(--color-primary-dark);
+  color: var(--color-light);
+
+  text-align: center;
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: var(--text-sm);
+}

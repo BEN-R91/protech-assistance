@@ -1,0 +1,347 @@
+/* ================================
+   CHARTE GRAPHIQUE
+   Protech Assistance
+   ================================ */
+
+:root {
+  /* ================================
+     IDENTITÉ VISUELLE
+     ================================ */
+
+  /*
+    Direction artistique :
+    - sobre
+    - professionnelle
+    - rassurante
+    - humaine
+    - premium sans être froide
+
+    Objectif :
+    inspirer la confiance, la clarté et la réactivité.
+  */
+
+  /* ================================
+     COULEURS PRINCIPALES
+     ================================ */
+
+  --color-primary: #12324a;        /* Bleu nuit : confiance, sérieux, sécurité */
+  --color-primary-dark: #0b2235;   /* Bleu très sombre : header/footer */
+  --color-secondary: #2f80ed;      /* Bleu clair : liens, actions secondaires */
+  --color-accent: #2fae7b;         /* Vert sérénité : validation, rassurance */
+
+  /* ================================
+     COULEURS D'ÉTAT
+     ================================ */
+
+  --color-success: #2fae7b;        /* Situation normale */
+  --color-warning: #f59e42;        /* Situation à vérifier */
+  --color-danger: #d64545;         /* Urgence uniquement */
+  --color-info: #2f80ed;           /* Information / conseil */
+
+  /* ================================
+     FONDS
+     ================================ */
+
+  --color-background: #f7fafc;     /* Fond général doux */
+  --color-surface: #ffffff;        /* Cartes, blocs, formulaires */
+  --color-soft: #eef6f8;           /* Sections douces */
+  --color-soft-blue: #eaf3fb;      /* Fond léger bleu */
+  --color-soft-green: #eaf8f2;     /* Fond léger vert */
+  --color-soft-warning: #fff3e3;   /* Fond léger orange */
+  --color-soft-danger: #fdecec;    /* Fond léger rouge */
+
+  /* ================================
+     TEXTES
+     ================================ */
+
+  --color-text: #1f2933;           /* Texte principal */
+  --color-muted: #64748b;          /* Texte secondaire */
+  --color-light: #ffffff;          /* Texte sur fond sombre */
+
+  /* ================================
+     BORDURES & OMBRES
+     ================================ */
+
+  --color-border: #dde7ee;
+  --color-border-soft: #e8eef3;
+
+  --shadow-soft: 0 10px 30px rgba(18, 50, 74, 0.08);
+  --shadow-card: 0 6px 20px rgba(18, 50, 74, 0.06);
+
+  /* ================================
+     TYPOGRAPHIES
+     ================================ */
+
+  --font-title: "Manrope", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* ================================
+     TAILLES DE TEXTE
+     ================================ */
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: clamp(2.25rem, 5vw, 4rem);
+
+  /* ================================
+     ARRONDIS
+     ================================ */
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+  --radius-pill: 999px;
+
+  /* ================================
+     LAYOUT
+     ================================ */
+
+  --container-width: 1180px;
+  --section-padding: clamp(3rem, 6vw, 6rem);
+
+  /* ================================
+     SYSTÈME PROTECH
+     Normal / À vérifier / Urgent
+     ================================ */
+
+  --status-normal: #2fae7b;
+  --status-normal-bg: #eaf8f2;
+
+  --status-warning: #f59e42;
+  --status-warning-bg: #fff3e3;
+
+  --status-danger: #d64545;
+  --status-danger-bg: #fdecec;
+}
+
+/* ================================
+   BASE GLOBALE
+   ================================ */
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
+  color: var(--color-primary);
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--text-3xl);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.15;
+  font-weight: 750;
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  font-size: var(--text-xl);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+p {
+  color: var(--color-muted);
+  font-size: var(--text-base);
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ================================
+   CLASSES UTILITAIRES
+   ================================ */
+
+.container {
+  width: min(100% - 2rem, var(--container-width));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--section-padding);
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-card);
+}
+
+/* ================================
+   BOUTONS
+   ================================ */
+
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  background: var(--color-primary);
+  color: var(--color-light);
+
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 0.9rem 1.4rem;
+
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: var(--shadow-card);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  background: var(--color-soft-blue);
+  color: var(--color-primary);
+
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 0.9rem 1.4rem;
+
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button-warning {
+  background: var(--color-warning);
+  color: var(--color-primary-dark);
+}
+
+.button-danger {
+  background: var(--color-danger);
+  color: var(--color-light);
+}
+
+/* ================================
+   BADGES DE STATUT
+   ================================ */
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+
+  border-radius: var(--radius-pill);
+  padding: 0.35rem 0.75rem;
+
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.status-badge--normal {
+  background: var(--status-normal-bg);
+  color: var(--status-normal);
+}
+
+.status-badge--warning {
+  background: var(--status-warning-bg);
+  color: var(--status-warning);
+}
+
+.status-badge--danger {
+  background: var(--status-danger-bg);
+  color: var(--status-danger);
+}
+
+/* ================================
+   EXEMPLES DE TEXTES DE MARQUE
+   ================================ */
+
+/*
+  Positionnement :
+  Protech Assistance est un service de vigilance numérique,
+  de prévention et de réaction rapide face aux situations suspectes.
+
+  Promesse :
+  Un doute numérique ne devrait jamais vous laisser seul.
+
+  Phrase d'accroche possible :
+  Un mail suspect, un SMS étrange, un faux site ?
+  Avant de cliquer, demandez à Protech.
+
+  CTA principal :
+  J’ai un doute numérique
+
+  CTA secondaire :
+  Voir comment ça marche
+
+  Système de lecture du risque :
+  - Normal
+  - À vérifier
+  - Urgent
+
+  Ton visuel :
+  - rassurant
+  - direct
+  - humain
+  - jamais anxiogène
+  - jamais trop “hacker”
+*/
+
+/* ================================
+   MOTS-CLÉS DESIGN
+   ================================ */
+
+/*
+  À privilégier :
+  - bleu nuit
+  - blanc doux
+  - vert rassurant
+  - orange vigilance
+  - cartes arrondies
+  - icônes simples
+  - textes très lisibles
+  - beaucoup d'espace
+  - ambiance calme et professionnelle
+
+  À éviter :
+  - vert fluo
+  - noir total
+  - ambiance Matrix
+  - hacker à capuche
+  - rouge partout
+  - cadenas génériques partout
+  - visuels anxiogènes
+*/

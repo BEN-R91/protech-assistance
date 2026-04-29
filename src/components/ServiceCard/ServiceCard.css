@@ -1,0 +1,46 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+  padding: 1.5rem;
+
+  border: 1px solid var(--color-border-soft);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-soft);
+}
+
+.service-card__title {
+  color: var(--color-primary);
+  font-size: var(--text-lg);
+}
+
+.service-card__text {
+  margin-top: 1rem;
+
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+.service-card__link {
+  display: inline-flex;
+  width: fit-content;
+
+  margin-top: auto;
+  padding-top: 1.5rem;
+
+  color: var(--color-secondary);
+  font-weight: 800;
+}
+
+.service-card__link:hover {
+  color: var(--color-primary);
+}
