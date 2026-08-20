@@ -1,16 +1,24 @@
-# React + Vite
+Protech Assistance
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projet personnel de développement web réalisé avec React.
 
-Currently, two official plugins are available:
+Application conçue pour présenter les services d’une entreprise d’assistance technique et proposer une navigation claire entre les différentes rubriques du site.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Fonctionnalités
+- Navigation entre plusieurs pages
+- Organisation des contenus avec React
+- Utilisation de composants réutilisables
+- Routage avec React Router
+- Interface responsive
+- Structuration du projet avec Vite
+- Technologies utilisées
+- React
+- JavaScript
+- React Router
+- Vite
+- HTML
+- CSS
+- Git / GitHub
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Objectif du projet :
+Concevoir de manière autonome une application web moderne, structurée et maintenable, de la définition du besoin jusqu’à l’intégration.
